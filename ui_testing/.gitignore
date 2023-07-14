@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+
+# Create files
+cypress/videos
