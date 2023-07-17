@@ -8,11 +8,15 @@
     "cy:run": "npx cypress run",
     "cy:run:chrome": "npx cypress run -b chrome",
     "cy:run:firefox": "npx cypress run -b firefox",
+
     "cy:run:api": "npx cypress run --spec ./cypress/e2e/api/*.js",
     "cy:run:ui": "npx cypress run --spec ./cypress/e2e/ui/*.js",
+    "cy:a11y": "npx cypress run --spec ./cypress/e2e/ui/a11ytests.cy.js",
+
     "cy:run:smoke": "npx cypress run --env grepTags=@smoke",
     "cy:run:regression": "npx cypress run --env grepTags=@regression",
     "cy:report": "npx cypress run --browser chrome --headed"
+    
   },
   "keywords": [],
   "author": "",
@@ -20,6 +24,7 @@
   "devDependencies": {
     "@cypress/grep": "^3.1.5",
     "cypress": "^12.16.0",
+    "cypress-axe": "^1.4.0",
     "cypress-mochawesome-reporter": "^3.5.1"
   }
 }
